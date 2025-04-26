@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>TravelMaster - Agenție de Turism</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Urbanist', sans-serif;
+      /* font-family: 'Georgia', Tahoma, Geneva, Verdana, sans-serif; */
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #efbe9d;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .section img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .destination {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .destination img {
+      width: 45%;
+    }
+    .destination div {
+      flex: 1;
+    }
+    .btn {
+      background: #ebaf87;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #eb9459;
+    }
+    footer {
+      background: #333;
+      color: #eee;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #ebaf87;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    form button:hover {
+      background: #eb9459;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Acasă</a>
+    <a href="#destinatii">Destinații</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  Descoperă Lumea cu TravelMaster!
+</section>
+
+<section id="destinatii" class="section">
+  <h2>Destinațiile Noastre</h2>
+
+  <div class="destination">
+    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+    <div>
+      <h3>Paris, Franța</h3>
+      <p>Vizitează Turnul Eiffel, Muzeul Luvru și plimbă-te pe Champs-Élysées. Preț începând de la <strong>499€</strong>.</p>
+      <a href="#paris" class="btn">Rezervă Acum</a>
+    </div>
+  </div>
+  <div class="destination">
+    <img src="https://www.sunsiyam.com/media/5k3iw5a5/ssiv_general_04.jpg?width=782&height=521&mode=max" alt="Maldive">
+    <div>
+      <h3>Insulele Maldive, Maldive</h3>
+      <p>Vizitează Insulele Maldive si bucura-te de briza Oceanului Indian. Preț începând de la <strong>699€</strong>.</p>
+      <a href="#maldive" class="btn">Rezervă Acum</a>
+    </div>
+  </div>
+  <div class="destination">
+    <img src="https://curierulnational.ro/wp-content/uploads/2025/04/1024px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg" alt="Roma">
+    <div>
+      <h3>Roma, Italia</h3>
+      <p>Explorează Colosseumul, Fontana di Trevi și Vaticanul. Preț începând de la <strong>399€</strong>.</p>
+      <a href="#roma" class="btn">Rezervă Acum</a>
+    </div>
+  </div>
+
+  <div class="destination">
+    <img src="https://www.universalweather.com/blog/wp-content/uploads/2019/07/tokyo-ops-7-19.jpg" alt="Tokyo">
+    <div>
+      <h3>Tokyo, Japonia</h3>
+      <p>Descoperă Templul Sensoji, Grădinile Imperiale și cultura tradițională. Preț începând de la <strong>999€</strong>.</p>
+      <a href="#tokyo" class="btn">Rezervă Acum</a>
+    </div>
+  </div>
+  <div class="destination">
+    <img src="https://www.broadwaytravel.com/blog/wp-content/uploads/2019/06/AdobeStock_211230289-1200x700.jpg" alt="Barcelona">
+    <div>
+      <h3>Barcelona, Spania</h3>
+      <p>Vizitează Sagrada Família, Parcul Güell si La Rambla. Preț începând de la <strong>599€</strong>.</p>
+      <a href="#barcelona" class="btn">Rezervă Acum</a>
+    </div>
+</section>
+
+<section id="paris" class="section">
+  <h2>Parisul te așteaptă - lasă-te inspirat!</h2>
+  <img src="https://digital.ihg.com/is/image/ihg/intercontinental-paris-7596881385-2x1" alt="Paris View">
+  <p>
+   <b>Descoperă Parisul! </b> 
+  </p>
+  <p>
+    Vino să trăiești magia Parisului, orașul iubirii și al eleganței! Plimbă-te pe străzile pline de viață și admiră repere emblematice precum Turnul Eiffel, Catedrala Notre-Dame și Arcul de Triumf. Explorează muzeele de renume mondial, de la impresionantul Luvru până la artisticul Musée d'Orsay. Bucură-te de o plimbare romantică pe malurile Senei sau de o după-amiază relaxantă în grădinile Tuileries. Parisul înseamnă artă, istorie, gastronomie rafinată și o atmosferă unică, care te va cuceri iremediabil.
+  </p>
+  <p>
+    <i>Pentru mai multe detalii, contactati-ne! </i> 
+   </p>
+</section>
+<section id="Maldive" class="section">
+  <h2>Descoperă frumusețea pură a Insulelor Maldive - locul unde visul devine realitate!</h2>
+  <img src="https://www.baros.com/wp-content/uploads/2023/02/2.png" alt="Maldive View">
+  <p>
+   <b> Descoperă paradisul din Maldive!</b> 
+  </p>
+  <p>
+    Lasă-te purtat într-o lume a viselor, unde nisipul alb și fin întâlnește apele turcoaz ale Oceanului Indian! Maldivele te invită să te relaxezi în vile spectaculoase pe apă, să explorezi recife de corali vibrante și să te bucuri de apusuri de poveste. Fie că alegi să faci snorkeling printre pești exotici, să te răsfeți într-un spa de lux sau să savurezi cine romantice sub stele, Maldivele îți promit o experiență de neuitat.
+  </p>
+  <p>
+    <i>Pentru mai multe detalii, contactati-ne! </i> 
+   </p>
+</section>
+<section id="roma" class="section">
+  <h2>Roma te așteaptă să scrii propria ta poveste printre legende!</h2>
+  <img src="https://www.turismoroma.it/sites/default/files/Fontane%20-%20Fontana%20di%20Trevi_1920x1080mba-07410189%20%C2%A9%20Clickalps%20_%20AGF%20foto.jpg" alt="Roma View">
+  <p>
+    <b> Descoperă farmecul etern al Romei! </b>
+  </p>
+  <p>
+    Pășește în inima istoriei și lasă-te cucerit de splendoarea Romei! Vizitează Colosseumul impresionant, plimbă-te prin Forumul Roman și admiră Capela Sixtină din Vatican. Descoperă fântânile baroce din Piazza Navona și aruncă o monedă în Fontana di Trevi pentru a-ți asigura întoarcerea în Orașul Etern. La fiecare colț, Roma te întâmpină cu artă, arhitectură grandioasă și povești vechi de mii de ani.
+  </p>
+  <p>
+    <i>Pentru mai multe detalii, contactati-ne! </i> 
+   </p>
+</section>
+
+<section id="tokyo" class="section">
+  <h2>Tokyo – orașul care nu doarme niciodată și unde aventura e la fiecare pas!</h2>
+  <img src="https://media.digitalnomads.world/wp-content/uploads/2021/02/20120635/tokyo-for-digital-nomads.jpg" alt="Tokyo View">
+  <p>
+    <b> Descoperă energia fascinantă a Tokyo-ului!</b>
+  </p>
+  <p>
+    Intră într-o lume unde tradiția se împletește perfect cu inovația! Tokyo te așteaptă cu temple istorice precum Senso-ji, grădini zen liniștite și zgârie-nori futuristici. Explorează cartiere vibrante ca Shibuya și Shinjuku, savurează preparate autentice în piețele locale și bucură-te de priveliști spectaculoase din Turnul Tokyo. Fiecare stradă are o poveste, fiecare moment aduce o surpriză.
+  </p>
+  <p>
+    <i>Pentru mai multe detalii, contactati-ne! </i> 
+   </p>
+</section>
+<section id="barcelona" class="section">
+  <h2>Barcelona te așteaptă cu experiențe memorabile și culori care îți vor rămâne în suflet!
+  </h2>
+  <img src="https://a.storyblok.com/f/190572/1365x768/9ac7f135cd/arc-de-triomf-barcelona.jpg" alt="Barcelona View">
+  <p>
+   <b> Descoperă spiritul vibrant al Barcelonei!</b> 
+  </p>
+  <p>
+    Lasă-te cucerit de farmecul Barcelonei, unde soarele, marea și arta se întâlnesc perfect! Explorează operele fascinante ale lui Gaudí, de la Sagrada Família la Parcul Güell, plimbă-te pe faimoasa La Rambla și relaxează-te pe plajele însorite ale orașului. Simte energia piețelor colorate, gustă tapas autentice și bucură-te de ritmul inconfundabil al vieții catalane.  </p>
+    <p>
+      <i>Pentru mai multe detalii, contactati-ne! </i> 
+     </p>
+  </section>
+<section id="contact" class="section">
+  <h2>Contactează-ne</h2>
+  <p><strong>Adresă:</strong> Str. 9 Mai nr. 8, Timisoara </p>
+  <p><strong>Telefon:</strong> +40 774 633 289</p>
+  <p><strong>Telefon 2:</strong> +40 736 334 551 </p>
+  <p><strong>Email:</strong> contact@travelmaster.ro</p>
+
+  <h3>Formular de Rezervare</h3>
+  <form onsubmit="alert('Formular trimis! Vă vom contacta în curând.'); return false;">
+    <input type="text" placeholder="Numele dvs." required>
+    <input type="email" placeholder="Emailul dvs." required>
+    <input type="tel" placeholder="Telefonul dvs." required>
+    <textarea placeholder="Mesajul dvs. (opțional)"></textarea>
+    <button type="submit">Trimite</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 TravelMaster - Toate drepturile rezervate
+</footer>
+
+<script>
+  // JavaScript simplu pentru a face scroll frumos
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
